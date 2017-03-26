@@ -20,6 +20,8 @@
   "dependencies": {
     "bootstrap": "3",
     "express": "^4.15.2",
+    "jquery": "^3.2.1",
+    "materialize-css": "^0.98.1",
     "nodemon": "^1.11.0",
     "socket.io": "^1.7.3"
   }

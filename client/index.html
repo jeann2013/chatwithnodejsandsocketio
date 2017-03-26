@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0">
+	<title>Chat Node.js and Socket.io</title>
+	<link rel="stylesheet" type="text/css" href="/static/materialize-css/dist/css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="card-panel teal lighten-2 center-align"><h2 class="white-text">Chat Node.js and Socket.io</h2></div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<textarea id="messages" class="materialize-textarea"></textarea>
+				<label for="textarea1">Chat</label>
+			</div>
+			<div class="input-field col s10">
+				<input placeholder="Write here your new messages" id="new_message" type="text" class="validate">
+			</div>
+			<div class="input-field col s2">
+				<button class="btn waves-effect waves-light" type="submit" name="action">SEND
+					<i class="material-icons right"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/static/jquery/dist/jquery.min.js"></script>
+	<script src="/static/materialize-css/dist/js/materialize.js"></script>
+	<script src="main.js"></script>
+</body>

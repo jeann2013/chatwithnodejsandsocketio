@@ -1,0 +1,25 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Chat en tiempo real con socket.oi y node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Helg18/chatwithnodejsandsocketio.git"
+  },
+  "author": "Henryleon.com.ve",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Helg18/chatwithnodejsandsocketio/issues"
+  },
+  "homepage": "https://github.com/Helg18/chatwithnodejsandsocketio#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0",
+    "socket.io": "^1.7.3"
+  }
+}

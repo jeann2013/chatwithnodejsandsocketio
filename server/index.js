@@ -15,11 +15,23 @@ app.use(express.static('client'));
 });*/
 
 
-//Define the socket
-io.on('conection', function(socket){
-	console.log("Un nuevo usuario se ha conectado a nuestro socket"+ socket.handshake.address);
-});
+var messages = [{
+	id: 1,
+	text: "Welcome to our chat. ",
+	nickname: "Bot - HenryLeon.com.ve"
+}]; 
 
+//Define the socket
+io.on('connection', function(socket){
+	console.log("Un nuevo usuario se ha conectado a nuestro socket"+ socket.handshake.address);
+	socket.emit('messages', messages);
+
+	socket.on('add-msg', function(data){
+		messages.push(data);
+
+		io.sockets.emit('messages', messages);
+	});
+});
 
 server.listen('8000', function(){
 	console.log('El servidor esta funcionando en localhost:8000');

@@ -1,7 +1,7 @@
 $('#messages').height('300px');
 
 //establishing the conection
-var socket = io.connect('http://localhost:8000', {'forceNew':true});
+var socket = io.connect('http://52.18.22.122:8000', {'forceNew':true});
 
 
 //listener for messages
